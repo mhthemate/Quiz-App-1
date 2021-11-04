@@ -1,0 +1,210 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+/* Common */
+* {
+    margin: 0px;
+    font-size: 18px;
+    color: #222222;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: auto;
+    max-width: 700px;
+}
+
+/* header */
+
+header {
+    display: block;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-course {
+    color: #ee3322;
+    font-size: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    float: left;
+    height: 80px;
+}
+
+/* .header-circle {} */
+
+.header-letter {
+    background-color: #ffee00;
+    border-radius: 100%;
+    transform: rotate(-30deg);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+}
+
+/* quiz-game */
+.quiz {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: -18px;
+}
+
+.name {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-family: 'Trebuchet MS', cursive;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.quiz-cover {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: middle;
+}
+
+.intro {
+    padding: 18px 0px;
+}
+
+.intro-name {
+    font-size: 28px;
+    padding: 18px 0;
+}
+
+.text {
+    padding: 18px 0;
+}
+
+.btn-container {
+    padding: 18px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.title {
+    padding: 18px 0;
+}
+
+.gl {
+    padding: 36px;
+}
+
+.author {
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 18px;
+
+}
+
+.start-btn,
+.btn-again {
+    background-color: #2196f3;
+
+}
+
+.start-btn:hover {
+    background-color: #46a094;
+}
+
+.question-title {
+    font-size: 24px;
+    padding-bottom: 18px;
+    margin-top: 30px;
+}
+
+.question-list {
+    margin-bottom: auto;
+    padding: 30px 0;
+}
+
+.answer {
+    padding: 15px 0;
+    /* background-color: #f1f1f1; */
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.answer input[type='radio']:checked ~ span{
+    background-color: #ddd;
+}
+.answer:hover:enabled > span{
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit-btn {
+    background-color: #4caf50;
+    padding: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #46a094;
+}
+
+.submit {
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.again {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+}
+
+h2, h4 {
+    padding: 15px;
+}
+
+h5 {
+    padding-bottom: 30px;
+}
+
+.answer > span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.isCorrect{
+    background-color: #d4edda !important;
+}
+
+.isWrong{
+    background-color: #f8d7da !important;
+}
+
+label{
+    display: block;
+}
+
+.answer > p{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    color: white;
+}
+.question-number{
+    margin-bottom: 30px;
+}
